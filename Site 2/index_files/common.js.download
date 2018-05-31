@@ -1,0 +1,14 @@
+function is_email_address(emailField){
+	var re_email = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+	if(!re_email.test(emailField)){		
+		return false;
+	}else{
+		return true;
+	}
+}
+
+function getQueryString(name) {
+   	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+   	var r = window.location.search.substr(1).match(reg);
+   	if (r != null) return unescape(r[2]); return null;
+}

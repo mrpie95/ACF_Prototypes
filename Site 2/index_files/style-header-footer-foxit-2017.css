@@ -1,0 +1,757 @@
+@charset "utf-8";
+/* CSS Document */
+
+/***
+Header
+***/
+.header-wrap {
+	background: #fcfcfc;
+}
+/***
+Pre-Header and pre-header elements
+***/
+.pre-header {
+	color: #333;
+	padding-top: 10px;
+	line-height: 1.2;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	background: #fcfcfc;
+	position:relative;
+	font-size:12px;
+}
+.pre-header a {
+	color: #333;
+}
+.pre-header a:hover {
+	color: #de3225;
+}
+.pre-header a:focus {
+	text-decoration: none;
+}
+.pre-header li {
+	padding-left: 6px;
+	padding-right: 6px;
+	border-right: solid 1px #333;
+}
+.pre-header li:last-child {
+	border: none;
+}
+.pre-header li:last-child {
+	padding-right: 0;
+}
+/* search block */
+.pre-header .search-box {
+	right: -7px;
+	top: 100%;
+	padding: 15px;
+	display: none;
+	background: #fcfcfc;
+	position: absolute;
+	box-shadow: 5px 5px rgba(91, 91, 91, 0.2);
+	width: 274px;
+	margin-top: 10px;
+	z-index: 9999;
+}
+.pre-header .search-box:after {
+	top: -8px;
+	width: 0;
+	height: 0;
+	right: 8px;
+	z-index: 2;
+	content: " ";
+	display: block;
+	position: absolute;
+	border-bottom: 8px solid #de3225;
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+}
+.pre-header .search-box button {
+	margin-left: 0 !important;
+	background-color:#de3225;
+	border:0;
+}
+.pre-header li.menu-search i {
+	color: #333;
+	font-size: 16px;
+	cursor: pointer;
+	position: relative;
+	top: 0;
+	width: 15px;
+	height: 15px;
+	opacity: 0.6;
+}
+.pre-header li.menu-search i:hover {
+	color: #c63927;
+	background-position: 0 -15px;
+}
+/* langs block */
+.pre-header .langs-block {
+	position: relative;
+}
+.pre-header .langs-block .fa {
+	margin-right: 0;
+}
+.pre-header .langs-block-dropdown-wrapper {
+	position: absolute;
+	right:0;
+	left:auto;
+	top: 100%;
+	z-index: 99999;
+}
+.pre-header .langs-block-dropdown {
+	padding: 10px 10px 2px;
+	background: #fcfcfc;
+	z-index: 9999;
+	min-width:175px;
+	display: none;
+	margin-top: 12px;
+	border-top: solid 2px #de3225;
+	box-shadow: 5px 5px rgba(91, 91, 91, 0.2);
+	position: relative;
+ transition: opacity .3s ease-in-out;
+ -moz-transition: opacity .3s ease-in-out;
+ -webkit-transition: opacity .3s ease-in-out;
+}
+.pre-header .langs-block-dropdown:after {
+	top: -8px;
+	width: 0;
+	height: 0;
+	right: 8px;
+	z-index: 2;
+	content: " ";
+	display: block;
+	position: absolute;
+	border-bottom: 8px solid #de3225;
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+}
+.pre-header .langs-block:hover .langs-block-dropdown {
+	display: block;
+}
+.pre-header .langs-block-dropdown a {
+	display: block;
+	margin-bottom: 8px;
+}
+
+/* BEGIN max width 767px */
+@media (max-width: 767px) {
+.pre-header .pull-right li:first-child {
+ padding-left: 0;
+}
+}
+/***
+Header and header elements
+***/
+.header {
+	border-radius: 0;
+	z-index: 999;/*	position: relative;*/
+}
+.header .container {
+	position: relative;
+}
+
+/***
+logoset 
+***/
+.logoset {
+  padding: 0;
+  margin: 0;
+}
+.logoset :before, .logoset:after {
+  content: " ";
+  display: table;
+}
+.logoset :after {
+  clear: both;
+}
+.logoset  li {
+  float: left;
+  display: inline;
+  list-style: none;
+  margin-bottom:10px;
+}
+.logoset  li a.logo {
+  width: 136px;
+  height: 50px;
+  display: block;
+  background: url(../images/global/small/foxit-logo-400.png) no-repeat;
+  background-size: 136px;
+}
+.logoset  li a.tagline {
+  width: 300px;
+  height: 42px;
+  display: block;
+  background: url(../images/global/small/tagline-400.png) no-repeat bottom;
+  background-size: 300px;
+
+}
+@media (max-width: 767px) {
+.logoset  li a.logo {
+  width: 100px;
+  height: 38px;
+  display: block;
+  background: url(../images/global/small/foxit-logo-400.png) no-repeat;
+  background-size: 100px;
+}
+.logoset  li a.tagline {
+  width: 240px;
+  height: 15px;
+  display: block;
+  background: url(../images/global/small/tagline-400.png) no-repeat bottom;
+  background-size: 240px;
+
+}
+}
+@media (max-width: 480px) {
+.logoset  li a.logo {
+  width: 80px;
+  height: 30px;
+  display: block;
+  background: url(../images/global/foxit-logo-400.png) no-repeat;
+  background-size: 80px;
+}
+}
+/*.logoset  li a.logo {
+  width: 136px;
+  height: 50px;
+  display: block;
+  background: url(../images/global/foxit-logo-136.png) no-repeat;
+}
+.logoset  li a.tagline {
+  width: 300px;
+  height: 42px;
+  display: block;
+  background: url(../images/global/foxit-tagline.png) no-repeat bottom;
+    margin-top:10px;
+
+}
+@media (max-width: 480px) {
+	.logoset  li a.logo {
+  width: 80px;
+  height: 32px;
+  display: block;
+  background: url(../images/global/Foxit-logo-80.png) no-repeat;
+}
+.logoset  li a.tagline { display: none;
+}
+}*/
+
+/* mob-toggler */
+.header .mobi-toggler {
+	float: right;
+	color: #333;
+	border: 1px solid #333;
+	border-radius: 100% !important;
+	width: 32px;
+	height: 32px;
+	display: none;
+	margin: 0;
+	position: relative;
+	text-align:center;
+}
+.header .mobi-toggler i {
+	font-size:16px;
+	padding-top:8px;
+}
+
+.header .mobi-toggler:hover {
+	border-color: #de3225;
+	color: #de3225;
+}
+/* Navigation */
+.header-navigation {
+	font: 1.25em "Open Sans", sans-serif;
+	/*font: 15px "Open Sans", sans-serif;*/
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+.header-navigation ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.header-navigation > ul > li {
+	float: left;
+}
+.header-navigation > ul > li > a {
+	color: #333;
+	display: block;
+	padding: 23px 12px 20px;
+}
+.header-navigation ul > li.active > a, .header-navigation ul > li > a:hover, .header-navigation ul > li > a:focus {
+	color: #de3225;
+	background: #fcfcfc;
+	text-decoration: none;
+}
+.header-navigation ul > li.active > a {
+	border-bottom: 2px solid #de3225;
+}
+.header-navigation, .header-navigation .dropdown {
+	position: static;
+}
+.header-navigation .dropdown-menu {
+	left: auto;
+	top: 100%;
+	padding: 0;
+	background: #fcfcfc;
+	position: absolute;
+	border: none;
+	box-shadow: 5px 5px rgba(91, 91, 91, 0.2);
+	text-transform: none;
+	font: 13px "Open Sans", sans-serif;
+	letter-spacing: 0;
+	border-radius: 0;
+	z-index: 9999;
+}
+.header-navigation .dropdown-menu:before, .header-navigation .dropdown-menu:after {
+	display: none !important;
+}
+.header-navigation > ul > li > .dropdown-menu {
+	margin-top: -5px;
+	border-top: solid 3px transparent;
+	z-index: 1001;
+}
+.header-navigation > ul > li.dropdown:hover > a:after {
+	bottom: 0;
+	width: 0;
+	height: 0;
+	z-index: 1002;
+	content: " ";
+	display: block !important;
+	position: absolute;
+	border-bottom: 8px solid #de3225;
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+}
+.ie8 .header-navigation > ul > li.dropdown:hover > a:after {
+	display: none !important;
+}
+.header-navigation .dropdown-menu > li:first-child {
+	border-top: solid 2px #de3225;
+}
+.header-navigation .dropdown-menu li {
+	padding: 0;
+	margin: 0;
+	border-bottom: solid 1px #efefef;
+	position: relative;
+	float: none;
+}
+.header-navigation .dropdown-menu li > a {
+	padding: 10px 15px;
+	font-weight: 400;
+	color: #333;
+}
+.header-navigation .dropdown-menu > li > a:hover, .header-navigation .dropdown-menu > li.active > a, .header-navigation .header-navigation-content .header-navigation-col li > a:hover, .header-navigation .header-navigation-content .header-navigation-col li.active > a {
+	color: #de3225;
+}
+.dropdown-submenu > a:after {
+	display: none;
+}
+/* navigation content */
+.header-navigation-content {
+	padding: 20px 30px;
+	min-width: 540px;
+}
+.dropdown-full-width {
+	right: 0;
+	width: 100%;
+}
+.dropdown-company {
+	right: 0;
+}
+.dropdown-right {
+	right: 0;
+}
+.header-navigation-content .header-navigation-col {
+	padding: 0;
+}
+.header-navigation-content h4 {
+	font: bold 18px 'Open Sans', Arial, sans-serif;
+	margin: 0 10px;
+	padding: 10px 10px 5px;
+	border-bottom: solid 1px #f0f0f0;
+	font-weight:400;
+}
+.header-navigation-content ul {
+	padding: 0;
+	margin: 10px;
+	list-style: none;
+}
+.header-navigation-content li {
+	padding: 0;
+	border: none !important;
+}
+.header-navigation-content li > a {
+	display: block;
+}
+
+
+/* Updated navigation with menu-img-link */
+.header-navigation-content li a.menu-img-link {
+	padding:0;
+	margin:0;
+	text-decoration:none;
+	color:#333;
+}
+.header-navigation-content li a:hover.menu-img-link {
+	color:E02222;
+}
+.header-navigation-content li a.menu-img-link img {
+	margin: 10px 10px 10px 0;
+}
+.header-navigation-content li a.menu-img-link-ad {
+	text-align:center;
+	text-decoration:none;
+	color:#333; 
+}
+
+@media (max-width: 480px) {
+/* Updated navigation with menu-img-link */
+.header-navigation-content {
+	padding: 20px 0;
+}
+.header-navigation > ul > li > a {
+	padding: 23px 0;
+}
+.header-navigation .dropdown-menu li > a {
+	padding: 10px 0;
+
+}
+.header-navigation-content li a.menu-img-link-ad {
+	text-align:left;
+}
+}
+
+
+/* BEGIN min width 1025px */
+@media (min-width: 1025px) {
+.header .header-navigation {
+ display: block !important;
+}
+
+ .header-navigation > ul > li:hover > .dropdown-menu {
+ display: block;
+}
+}
+/* BEGIN min width 1025px max width 1205 */
+@media (min-width: 1025px) and (max-width: 1205px) {
+ .header .mobi-toggler {
+ display: none;
+}
+
+.header .header-navigation {
+ display: block !important;
+ clear: both;
+ margin-top: -10px;
+ float: left !important;
+}
+.reduce-header .header-navigation {
+ margin-top: -6px;
+}
+.header .header-navigation > ul > li {
+ margin-right: 27px;
+}
+.header .header-navigation > ul > li > a {
+ padding: 5px 0 18px;
+}
+.reduce-header .header-navigation > ul > li > a {
+ padding-bottom: 13px;
+}
+.header .header-navigation > ul > li.active > a, .header .header-navigation > ul > li > a:hover, .header .header-navigation > ul > li > a:focus, .header .header-navigation > ul > li.open > a, .header .header-navigation > ul > li.open > a:hover, .header .header-navigation > ul > li.open > a:focus {
+ background: none;
+}
+.header-navigation > ul > li.dropdown:hover > a:after {
+ margin-left: 10px;
+}
+}
+
+/* BEGIN max width 1024px */
+@media (max-width: 1024px) {
+.header .mobi-toggler {
+ display: block;
+}
+.site-logo {
+ float: left;
+ padding-top: 0;
+ padding-bottom: 10px;
+ background: url(../images/global/Foxit-Logo-Tagline-s.png) no-repeat;
+ width:325px;
+ height:50px;
+}
+.header .header-navigation {
+ float: none !important;
+ display: none;
+ clear: both;
+ background: #F9F9F9;
+ padding: 0 20px;
+ margin: 0 -20px 25px;
+ font-size: 16px;
+}
+.header .header-navigation li {
+ float: none;
+ padding: 0;
+ clear: both;
+}
+.header .header-navigation li > a {
+ border-bottom: 1px solid #efefef !important;
+ padding: 8px 10px 9px;
+ margin: 0 -10px;
+ position: relative;
+ color: #666 !important;
+ background: none !important;
+}
+.header .header-navigation li > a:hover, .header .header-navigation li.active > a {
+ border-bottom: 1px solid #efefef !important;
+ background: none !important;
+ color: #dd4632 !important;
+ text-decoration: none;
+}
+.header-navigation > ul > li.dropdown:hover > a:after {
+ border: none;
+}
+.header-navigation > ul > li > a > i.fa-angle-down {
+ display: block;
+ float: right;
+ margin: 3px 0 0;
+}
+
+
+
+/* dropdown menu */
+.header-navigation .dropdown-menu, .header-navigation > ul > li > .dropdown-menu {
+ position: static;
+ width: 100%;
+ margin: 0;
+ border: none;
+ box-shadow: none;
+ background: none;
+ margin-top: 0;
+ border-top: none;
+ z-index: 22;
+}
+.header-navigation .dropdown-menu li {
+ border: none !important;
+ margin-left: 20px;
+}
+.header-navigation .dropdown-menu li > a {
+ padding: 10px 10px 9px;
+ z-index: 999;
+ position: relative;
+}
+.header-navigation .dropdown-menu li > a > i {
+ display: none;
+}
+.header-navigation .dropdown-menu .dropdown-menu {
+ display: block;
+}
+.header-navigation .header-navigation-content {
+ border: none;
+}
+.dropdown-megamenu .header-navigation-content {
+ padding: 5px 0 0;
+ margin-left: -20px;
+}
+.dropdown-megamenu .header-navigation-content .row {
+ margin: 0;
+}
+.dropdown-megamenu .header-navigation-content .header-navigation-col {
+ padding: 0;
+ float: none;
+ width: 100%;
+}
+.dropdown-megamenu .header-navigation-content h4 {
+ font-size: 13px;
+ padding: 10px 10px 9px;
+ margin: 0 -10px 0 10px;
+}
+.header-navigation .dropdown-megamenu .header-navigation-content li > a {
+ padding: 10px 10px 9px;
+}
+.header-navigation-content-ext {
+ background: none;
+}
+.header-navigation-description {
+ height: auto !important;
+ background: none;
+ box-shadow: none;
+ padding: 0;
+ margin: 0 10px;
+}
+.header-navigation-content-ext .col-md-6, .header-navigation-content-ext .col-md-3 {
+ float: none;
+ width: 100%;
+}
+ .dropdown-megamenu .header-navigation-content-ext .col-md-3 h4 {
+ border-bottom: 1px solid #EFEFEF;
+}
+.header-navigation .dropdown-menu .header-navigation-content-ext li > a {
+ display: block;
+}
+.header-navigation-content-ext .col-md-3, .header-navigation-content-ext .col-md-6 {
+ padding: 0;
+}
+.header-navigation-content-ext .col-md-6 {
+ margin-left: 0px;
+}
+.header-navigation-content-ext .col-md-6 h4 {
+ margin-left: 0;
+ padding-left: 0;
+}
+.header .nav-brands {
+ margin: 15px 10px;
+ padding: 0;
+ width: 100%;
+ background: #fff;
+}
+.header .nav-brands ul {
+ border: 1px solid #F0F0F0;
+ padding: 10px;
+}
+.header .nav-brands li {
+ max-width: 50%;
+ display: inline-block;
+ border: none;
+ margin-left: 0
+}
+.header .nav-brands li a, .header .nav-brands li a:hover {
+ border: none !important;
+ margin: 0 !important;
+}
+.nav-catalogue .dropdown-menu > li {
+ margin-left: 0;
+}
+.nav-catalogue .header-navigation-content {
+ padding: 20px 0 0;
+}
+.nav-catalogue .product-item {
+ margin-bottom: 20px;
+}
+.header-navigation li.menu-search, .header-navigation li.menu-search span.sep {
+ display: none;
+}
+.header-navigation .search-box {
+ position: relative;
+ right: auto;
+ left: 0;
+}
+.header-navigation .search-box:after {
+ right: auto;
+ left: 0;
+}
+}
+
+/* BEGIN max width 767px */
+@media (max-width: 767px) {
+ .site-logo {
+ background: url(../images/global/Foxit-Logo-s.png) no-repeat;
+ width:100px;
+ height:32px;
+margin-bottom:10px;
+}
+ .header-navigation-content {
+ min-width: 100px;
+}
+}
+
+/***
+Pre-Footer and pre-footer elements
+***/
+.footer {
+	background: #313030;
+	color: #999999; font-weight:300; 
+}
+.footer .container {
+	padding-top: 45px;
+}
+.footer a {
+	color:#999999;
+}
+.footer a:hover {
+	color:#fff;
+}
+.footer h2 {
+	font-size: 21px;
+	color: #c2c1c1;
+}
+.footer p {
+	margin-bottom: 20px;
+}
+.footer li {
+	margin-bottom: 6px;
+}
+
+.footer i:hover {
+	color: #fff;
+}
+.footer address {
+	line-height: 1.7;
+}
+.footer-col {
+	padding-bottom: 22px;
+}
+.footer hr {
+	margin-top: 0;
+	border-color: #404040;
+}
+.footer .form-control, .footer .form-control:focus {
+	border: none;
+}
+/* subscribe */
+.footer .footer-subscribe-box {
+	padding-bottom: 14px;
+}
+.footer-subscribe-box .input-group {
+	border: solid 1px #545454;
+	padding: 1px 1px 0 0;
+}
+.footer-subscribe-box input {
+	border-radius: 0;
+	background: #313030;
+	border: solid 1px #313030;
+	color: #999999; font-weight:300;
+	font: 13px Arial, sans-serif;
+}
+.footer-subscribe-box input:focus {
+	box-shadow: none;
+	border: solid 1px #313030;
+}
+/*pre-footer lauguage */
+.footer .footer-lauguage-box {
+	padding-bottom: 14px;
+}
+.footer-lauguage-box .lauguage-box {
+	border: solid 1px #545454;
+	padding: 1px 1px 0 0;
+}
+.footer-lauguage-box select {
+	border-radius: 0;
+	background: #313030;
+	border: solid 1px #313030;
+	color: #999999;
+	font: 13px Arial, sans-serif;
+}
+/* BEGIN max width 992px */	
+@media (max-width: 992px) {
+ .footer-subscribe-box form {
+ width: 100%;
+}
+ .footer .footer-subscribe-box {
+ padding-bottom: 25px;
+}
+}
+
+/* BEGIN max width 767px */
+@media (max-width: 767px) {
+.footer .margin-bottom-40 {
+ margin-bottom: 0;
+}
+.footer .pull-right {
+ float: none !important;
+}
+.footer .pull-right {
+ padding-top: 15px;
+}
+}
+
