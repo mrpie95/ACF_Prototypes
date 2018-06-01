@@ -4,16 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<link rel=”stylesheet” id=”font-awesome-css” href=”//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css” type=”text/css” media=”screen”>
 
 <link rel="stylesheet" type="text/css" href="styles/index_style.css">
 
+<script src=”//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js”></script>
+<script src="scripts/scripts.js"></script>
 
-<body>
+<body class="w3-animate-opacity">
 
-<!-- Navbar (sit on top) -->
+
 <div class="w3-top">
 
-  <div class="w3-bar" id="myNavbar">
+  <div class="w3-bar w3-hide" id="myNavbar">
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
@@ -38,78 +43,149 @@
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <h3 class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">AUSTRALIAN COMMERCIAL FINANCE</h3> 
-  
+  <div class="w3-display-middle w3-animate-opacity" style="white-space:nowrap;">
+    <img class="center" src="styles/images/logo.png">
+    <h3 class="w3-center w3-padding-large w3-black  w3-wide w3-animate-opacity">AUSTRALIAN COMMERCIAL FINANCE</h3> 
+
   </div>
 </div>
 
+<!-- <a href="#" class="back-to-top" style="display: inline;"> -->
+ <!-- Back to the top -->
+<!-- <i class="fa fa-arrow-circle-up"></i> -->
+ 
+<!-- </a> -->
 
 
-<div class="w3-content w3-container w3-padding-64" id="about">
-    <h4 class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> Specialist Flexible Development Finance</h4>
-  <h3 class="w3-center">What We Do</h3>
-
-  <div class="w3-row">
-  <p>ACF specialises in arranging institutional and private commercial development funding for property development projects, including acquisition, construction, preferred debt, mezzanine, and bridging facilities.</p>
-  </div>
-<!--   
-
-  <div class="col-sm-3 bg-red">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  </div>
-  <div class="col-sm-9 bg-warning">
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.    
-  </div> -->
-
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
-      <img src="/images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
-    </div>
-
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>
-
-<!-- Paralax Image 2 -->
-<div class="bgimg-2 w3-display-container w3-opacity-min img-fluid" id="about"></div>
-
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>I love photography</em></p>
-  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <div class="w3-row">
+<div class="w3-content w3-container w3-padding-64 w3-animate-opacity" id="about">
    
-   
+<!-- SECTION 1 -->
+
+
+ <div class="w3-container info w3-card">
+    <h1 class="w3-center extra_margin">About</h1>
   
+    <p info>Welcome to Australian Commercial Finance (ACF). Our company specialises in arranging institutional and private commercial development funding for property development projects, including acquisition, construction, preferred debt, mezzanine, and bridging facilities.</p>
+  
+    <h2 class="w3-center extra_">Our Goal - Excellence</h2>
+    
+    <p info>We strive to provide optimum rate-risk commercial finanace solutions, specialising in development funding for property developers and related property professionals. We strive for excelence in our service delivery.</p>
+ 
+</div>
+<!-- Image 2 - Spacer  -->
+<div class="bgimg-2 w3-display-container w3-opacity-min w3-grayscale space_1" id="about"></div>
+
+<div class="w3-container info w3-card extra_margin">
+    <h2 class="w3-center">Our Commitment To You</h2>
+    <hr>
+    <p>We strive to provide optimum rate-risk commercial finanace solutions, specialising in development funding for property developers and related property professionals. We strive for excelence in our service delivery.</p>
+     <ul>
+        <li>ACF is committed to the core values of teamwork, integrity and commitment.</li>
+        <li>Our business is built on Word of Mouth, testifiying to the success of our services to clients.</li>
+        <li>We created construction funding to builders for house and land packages where the end purhaser is a SMSF.</li>
+        <li>Recently we established construction funding packages for SDA approved accomodation facilities with the ption of take out on completion.</li>
+      <ul>
+  </div>
+  
+<div class="bgimg-4 w3-display-container w3-opacity-min w3-grayscale space_1" id="about"></div>
+
+
+<div class="w3-center w3-card info">
+
+<h2 class="w3-center ">Our Services</h2>
+<p class="w3-center">Our company provides a wide range of services that are shown below, click one to find out more.</p>
+
+    <div class="w3-cell-row extra_margin">
+      <div class="w3-container  w3-cell w3-half w3-center">
+        <h4>Development Finance </h4>
+        *Fast, Flexible, tailored Finance <br>
+        *Acquisition & Construction<br>
+        Lowest rate for risk<br>
+        High LVR’s – up to 90% of costs<br>
+        Non-resident applicants<br>
+      </div>
+
+      <div class="w3-container  w3-half w3-cell">
+        <h4>Construction Finance</h4>
+        No financials required <br>
+        Owner/Builders<br>
+        Bad credit<br>
+        Incomplete Projects<br>
+        Offshore applicants<br>
+      </div>
+    </div>
+
+  <div class="w3-cell-row extra_margin">
+      <div class="w3-container  w3-cell w3-half w3-center">
+        <h4>Commercial Property Loans</h4>
+        Wide choice of institutional and private lenders<br>
+    ensures optimum rate for risk<br>
+    LVR's up to 80%<br>
+      </div>
+
+      <div class="w3-container  w3-half w3-cell">
+        <h4>Special Purpose Construction Funding</h4>
+        SMSF Construction loans for Builders where the end purchaser is a SMSF<br>
+        NDIS/SDA special construction loans including securitisation
+      </div>
   </div>
 
-  <!-- First Parallax Image with Logo Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min" id="about"></div>
+    <div class="w3-cell-row extra_margin">
+      <div class="w3-container  w3-cell w3-half w3-center">
+        <h4>Mezzanine & Preferred Equity Solution</h4>
+        Increase your leverage<br>
+        Bridge the gap<br>
+        Retain control<br>
+      </div>
 
-<form class="w3-container " action="mailto:michael.pieniazek@gmail.com" method="post" enctype="text/plain">
-  <h2>Rounded Input</h2>
-  <p>Use any of the w3-round classes to create rounded borders.</p>
+      <div class="w3-container  w3-half w3-cell">
+        <h4>Bridging Short Term Funding</h4>
+        Competative Rates <br>
+        FAST, EFFICIENT<br>
+        Settlements<br>
+        Use our expertise to secure your funding QUICKLY<br>
+      </div>
+  </div>
+</div>
+
+<!-- Image Spacer -->
+<div class="bgimg-3 w3-display-container w3-opacity-min w3-grayscale space_1" id="about"></div>
+
+<hr>
+
+<form class="w3-container w3-card info" action="mailto:michael.pieniazek@gmail.com" method="post" enctype="text/plain">
+  <h2 class="w3-center">Contact Us</h2>
+  <p class="w3-center">Please do not hesitate to contact us for a free quotation with our specialist.</p>
 
   <p>
-  <label>First Name</label>
+  <label>Full Name:</label>
   <input class="w3-input w3-border w3-round-xlarge" name="first" type="text"></p>
   <p>
-  <label>Last Name</label>
-  <input class="w3-input w3-border w3-round-xlarge" name="last" type="text"></p>
+  <label>Company:</label>
+  <input class="w3-input w3-border w3-round-xlarge" name="company" type="text"></p>
+  <p>
+  <label>Mobile:</label>
+  <input class="w3-input w3-border w3-round-xlarge" name="mobile" type="text"></p>
+  <p>
+  <label>Enquiry:</label>
+  <textarea class="w3-input w3-border w3-round-xlarge message" name="mobile" type="text" placeholder="Please leave your query here"> </textarea> </p>
 
-  <p><input  class="w3-button w3-light-grey w3-round-xlarge" type="submit" value="Send"></p>
+  <p>
+  <input  class="w3-button w3-white w3-border w3-border-red w3-round-large button" type="submit" value="Send Enquiry"></p>
 </form>
 
-<div class="bgimg-3 w3-display-container w3-opacity-min" id="about"></div>
+<div class="w3-container w3-center">
+ <br>
+  <a href="#">Back To Top</a>  
+</div>
+
+
+<!-- <button class="w3-button w3-center w3-circle w3-black" href="#">^</button> -->
+
+
+<div class="footer-img w3-opacity-min "> All Rights Reservered Australian Comercial Finance Pty Ltd</div>
+
+
 
 
 </body>
